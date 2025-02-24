@@ -1,4 +1,5 @@
-Dataset Description:
+**Dataset Description:
+**
 The dataset consists of used car listings, containing information about various car attributes such as make, location, year, mileage, engine capacity, power, price, and more. Below are the columns present in the dataset:
 
 Name: The name of the car model.
@@ -17,7 +18,7 @@ Price(Lakh): The current price of the car in Lakh (Indian currency unit).
 Data Cleaning and Preprocessing Code:
 The code focuses on cleaning the dataset, handling missing values, and transforming certain columns into suitable formats for machine learning models.
 
-Renaming Columns:
+**Renaming Columns:**
 
 The Price column is renamed to Price(Lakh) for clarity.
 The New_Price column is cleaned by removing the word "Lakh" and "Cr" (if present) and is renamed to New_Price(Lakh).
@@ -34,7 +35,8 @@ The Power column is converted to a numeric value representing the engine power i
 Encoding Categorical Variables:
 
 The categorical variables (Fuel_Type, Transmission, and Owner_Type) are label-encoded, transforming them into numeric representations suitable for machine learning models.
-Data Normalization:
+
+**Data Normalization:**
 
 Numeric columns are scaled using MinMaxScaler, which transforms the data into a range between 0 and 1 to improve model performance.
 Feature and Target Variables:
@@ -43,21 +45,24 @@ The independent variables (features) include all columns except Price(Lakh), whi
 Visualization:
 
 Various plots (bar plot, strip plot, boxplot, scatter plot, violin plot) are used to visualize relationships between different columns, such as:
-Location vs. Price: Shows how car prices vary across different locations.
-Transmission vs. Mileage: Displays the relationship between the type of transmission and mileage.
-Fuel Type vs. Mileage: Shows how mileage varies based on the fuel type.
-Engine vs. Mileage: Correlation between engine size and mileage.
-Owner Type vs. Price: Highlights how the car's ownership affects its price.
-Kilometers Driven vs. Price: Explores the relationship between car usage and price.
-Train-Test Split:
+1. **Location vs. Price:** Shows how car prices vary across different locations.
+2. **Transmission vs. Mileage**: Displays the relationship between the type of transmission and mileage.
+3. **Fuel Type vs. Mileage**: Shows how mileage varies based on the fuel type.
+4. **Engine vs. Mileage:** Correlation between engine size and mileage.
+5. **Owner Type vs. Price**: Highlights how the car's ownership affects its price.
+6. **Kilometers Driven vs. Price:** Explores the relationship between car usage and price.
+
+**Train-Test Split**:
 
 The data is split into training and testing sets (80% training, 20% testing) to evaluate the performance of machine learning models.
 
-Model Training and Evaluation:
+**Model Training and Evaluation**:
 The dataset is used to train regression models (e.g., Linear Regression, Decision Trees, Random Forests) to predict the price of used cars based on the provided features. The code also implements various techniques for model evaluation, including:
 
-Mean Absolute Error (MAE): Used to evaluate the performance of regression models.
-Cross-Validation: Used for model validation to ensure robustness.
+**Mean Absolute Error (MAE)**: Used to evaluate the performance of regression models.
+**Cross-Validation**: Used for model validation to ensure robustness.
+
+**Usage:**
 
 This cleaned and preprocessed dataset can be used to build predictive models to estimate the price of used cars based on their attributes, making it valuable for car dealerships, individual buyers, or analysts in the automobile industry.
 
